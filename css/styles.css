@@ -1,3 +1,4 @@
+/** Utility Classes */
 
 /*! Basic Stylesheet for Discord-like Layout */
 /* Reset CSS */
@@ -88,6 +89,46 @@
     background-color: rgb(128, 255, 212);
 }
 
+.nero {
+    background-color: rgb(0, 0, 0);
+}
+
+.font-white {
+    color: white;
+}
+.font-black {
+    color: black;
+}
+
+/*! Stili testo */
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Whitney', sans-serif;
+    color: black;
+    margin-bottom: 10px;
+}
+
+p, a, span, li, button {
+    font-family: 'Whitney', sans-serif;
+    color: black;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.text-shadow-0-1rem {
+    text-shadow: 0.1rem 1rem 2rem rgba(0, 0, 0, 0.3)
+}
+
+/*! Stile pulsanti */
+
+.button-basic {
+    padding: 0.8rem;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
 /*! Grid System */
 
 .col-40 {
@@ -102,8 +143,56 @@
     width: 62%;
 }
 
+/*! Spacer Utility */
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.flex{
+    display: flex;
+    gap: 1rem;
+}
+
+.spacer {
+    height: 2px;
+    background-color: white;
+}
+
+.justify-center {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.justify-between {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.justify-around {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.gap-1rem {
+    gap: 1rem;
+}
+
+.gap-2rem {
+    gap: 2rem;
+}
+
+/** Fine Utility Classes */
 
 /*! Header Styles */
+
+.jumbotron {
+   background-image: url('../img/jumbo.png');
+}
 
 .header-background { /* Colore di sfondo semi-trasparente */
     padding: 10px 0; /* Spaziatura interna */
@@ -132,14 +221,12 @@
     flex: 2;
     flex-grow: 7;
     justify-content: center;
-    gap: 10px;
-    border-right: 1px dashed black;
-    border-left: 1px dashed black;
+    gap: 5rem;
 }
 
 .nav-links li a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 .login {
@@ -153,6 +240,26 @@
     color: black;
 }
 
+/* Font style per header */
+
+h2.catchy{
+    color: white;
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 15px; 
+    text-align: center;
+}
+
+p.subtitle{
+    color: white;
+    font-size: 1.2rem;
+    margin-bottom: 25px; 
+    text-align: center;
+    line-break: auto;
+    text-align: justify;
+}
+
+
 /*! Main Styles */
 
 .slide-container {
@@ -161,7 +268,6 @@
 }
 
 .slideshow {
-        height: 240px;
         width: 48%;
 }
 
@@ -194,7 +300,7 @@
     display: none;
 }
 
-/** pannelli chiusi = 1 unità */
+/* pannelli chiusi = 1 unità */
 .panel {
     flex: 1 1 0;
     background-color: rgb(32, 179, 171);
@@ -208,7 +314,7 @@
     transition: flex 0.3s ease, background 0.3s ease, color 0.3s ease;
 }
 
-/** pannello aperto = 2 unità */
+/* pannello aperto = 2 unità */
 .accordion input:checked + .panel {
     flex: 2 1 0;
     background-color: rgb(240, 127, 127);
@@ -217,10 +323,7 @@
     margin: 0 1px 0 0;
 }
 
-.spacer {
-    height: 2px;
-    background-color: white;
-}
+/*! Footer Styles */
 
 .nav-footer {
     display: flex;
