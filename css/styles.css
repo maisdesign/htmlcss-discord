@@ -271,6 +271,19 @@ p.subtitle{
     text-align: justify;
 }
 
+/*! Onde Decorative */
+
+.wave {
+    width: 100%;
+    height: 1rem;
+    display: block;
+    mask: url("../img/wave.svg") repeat center / contain;
+    padding: 2rem 0 0;
+}
+
+.wave-reverse{
+    transform: rotate(180deg) scale(-1, 1);
+}
 
 /*! Main Styles */
 
