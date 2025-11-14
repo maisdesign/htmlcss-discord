@@ -191,8 +191,9 @@ p, a, span, li, button {
 /*! Header Styles */
 
 .jumbotron {
-   background-image: url('../img/jumbo.png');
+    background: url('../img/jumbo.png') no-repeat center center / cover;
 }
+
 
 .header-background { /* Colore di sfondo semi-trasparente */
     padding: 10px 0; /* Spaziatura interna */
