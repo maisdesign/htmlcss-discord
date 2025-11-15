@@ -330,6 +330,7 @@ h3.news-title{
 .footer-accordion {
     padding: 10px 0 20px 0;
     margin: 0 auto;
+    gap: 5rem
 }
 
 .first-col{
@@ -349,6 +350,48 @@ h3.news-title{
 h4.language-selector{
     font-size: 2rem;
     font-weight: bold;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    text-decoration: none;
+    color: white;
+}
+
+.language-selector {
+    background-color: transparent;
+    border: none;
+    color: #ffffff;
+    font-size: 0.9rem;
+    padding: 0.25rem 0.5rem;
+    outline: none;
+    cursor: pointer;
+}
+
+.lang-box {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 0;
+}
+
+.lang-flag {
+    width: 20px;
+    border-radius: 4px;
+}
+
+.language-selector {
+    background-color: transparent;
+    border: none;
+    color: #ffffff;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.language-selector option {
+    background-color: rgb(34, 38, 41);
+    color: #ffffff;
 }
 
 /*! Footer Styles */
