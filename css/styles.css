@@ -149,6 +149,7 @@ p, a, span, li, button {
 
 .col-62{
     width: 62%;
+    margin:0 auto;
 }
 
 /*! Spacer Utility */
@@ -258,7 +259,7 @@ p, a, span, li, button {
 
 /* Font style per header */
 
-h2.catchy{
+.catchy{
     color: white;
     font-size: 4rem;
     font-weight: bold;
@@ -406,7 +407,6 @@ h4.language-selector{
 
 .footer-labels {
     padding: 6px 14px;
-    background-color: rgb(255, 181, 192);
     display: inline-flex;
     align-items: center;
 }
