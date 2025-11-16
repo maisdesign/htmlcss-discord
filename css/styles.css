@@ -1,52 +1,58 @@
-/** Utility Classes */
-
 /*! Basic Stylesheet for Discord-like Layout */
-/* Reset CSS */
+
+/* =========================
+   RESET & BASE
+   ========================= */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-img{
+img {
     max-width: 100%;
     height: auto;
 }
 
-.page-container{
-        width: 100%;
-        margin: 0 auto;
+.page-container {
+    width: 100%;
+    margin: 0 auto;
 }
 
-.border-basic{
+/* Bordi di debug / utilità */
+.border-basic {
     border-style: dashed;
     border-width: 1px;
 }
-
-.border-black{
-        border-color: black;
+.border-black {
+    border-color: black;
+}
+.border-white {
+    border-color: white;
 }
 
-.border-white{
-        border-color: white;
-}
+/* =========================
+   LAYOUT PRINCIPALE
+   ========================= */
 
 .navbar,
 .nav-links,
-.slide-container{
+.slide-container {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+/* Card centrali */
 .news-item {
     display: flex;
     align-items: center;
     gap: 3rem;
     padding: 20px 0;
 }
-/* Responsive adjustments */
 
+/* Responsive adjustments */
 @media (max-width: 768px) {
     .news-item {
         flex-direction: column;
@@ -64,80 +70,33 @@ img{
     }
 }
 
-/*! Color Palette */
+/* =========================
+   PALETTE COLORI
+   ========================= */
 
-.bluscuro {
-    background-color: rgb(0, 0, 140);
-}
+.bluscuro { background-color: rgb(0, 0, 140); }
+.ocra     { background-color: rgb(217, 165, 33); }
+.azzurro  { background-color: rgb(172, 215, 230); }
+.orchidea { background-color: rgb(237, 130, 237); }
+.bianco   { background-color: rgb(255, 255, 255); }
+.grigio   { background-color: rgb(212, 212, 212); }
+.rosa     { background-color: rgb(255, 191, 202); }
+.bluesky  { background-color: rgb(31, 143, 255); }
+.verde    { background-color: rgb(34, 140, 34); }
+.fucile   { background-color: rgb(34, 38, 41); }
+.acquamarina   { background-color: rgb(32, 179, 171); }
+.salmone       { background-color: rgb(240, 127, 127); }
+.verdepastello { background-color: rgb(128, 255, 212); }
+.nero          { background-color: rgb(0, 0, 0); }
+.ceruleo       { background-color: rgb(143, 163, 227); }
 
-.ocra {
-    background-color: rgb(217, 165, 33);
-}
+.font-white   { color: white; }
+.font-black   { color: black; }
+.font-ceruleo { color: rgb(143, 163, 227); }
 
-.azzurro{
-        background-color:rgb(172, 215, 230);
-}
-
-.orchidea {
-    background-color: rgb(237, 130, 237);
-}
-
-.bianco {
-    background-color: rgb(255, 255, 255);
-}
-
-.grigio {
-    background-color: rgb(212, 212, 212);
-}
-
-.rosa {
-    background-color: rgb(255, 191, 202);
-}
-
-.bluesky {
-    background-color: rgb(31, 143, 255);
-}
-
-.verde{
-    background-color: rgb(34, 140, 34);
-}
-
-.fucile{
-    background-color: rgb(34, 38, 41);
-}
-
-.acquamarina{
-    background-color: rgb(32, 179, 171);
-}
-
-.salmone{
-    background-color: rgb(240, 127, 127);
-}
-
-.verdepastello{
-    background-color: rgb(128, 255, 212);
-}
-
-.nero {
-    background-color: rgb(0, 0, 0);
-}
-
-.ceruleo {
-    background-color: rgb(143, 163, 227)
-}
-
-.font-white {
-    color: white;
-}
-.font-black {
-    color: black;
-}
-
-.font-ceruleo {
-    color: rgb(143, 163, 227)
-}
-
-/*! Stili testo */
+/* =========================
+   TIPOGRAFIA
+   ========================= */
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Whitney', sans-serif;
@@ -153,10 +112,12 @@ p, a, span, li, button {
 }
 
 .text-shadow-0-1rem {
-    text-shadow: 0.1rem 1rem 2rem rgba(0, 0, 0, 0.3)
+    text-shadow: 0.1rem 1rem 2rem rgba(0, 0, 0, 0.3);
 }
 
-/*! Stile pulsanti */
+/* =========================
+   PULSANTI
+   ========================= */
 
 .button-basic {
     padding: 0.8rem;
@@ -166,10 +127,9 @@ p, a, span, li, button {
     transition: background-color 0.3s ease;
 }
 
-/*! Grid System 
-Ora in parte basato su flexbox
-ho mantenuto il nome delle classi per pigrizia, ovviamente in una produzione seria andrebbero rinominate
-*/
+/* =========================
+   GRID / COLONNE (basate su flex)
+   ========================= */
 
 .col-40 {
     flex: 0 1 40%;
@@ -179,13 +139,15 @@ ho mantenuto il nome delle classi per pigrizia, ovviamente in una produzione ser
     flex: 0 1 35%;
 }
 
-.col-62{
-    max-width: 62rem;   
-    width: 100%;        
-    margin: 0 auto;   
+.col-62 {
+    max-width: 62rem;
+    width: 100%;
+    margin: 0 auto;
 }
 
-/*! Spacer Utility */
+/* =========================
+   UTILITY LAYOUT
+   ========================= */
 
 .flex-column {
     display: flex;
@@ -193,7 +155,7 @@ ho mantenuto il nome delle classi per pigrizia, ovviamente in una produzione ser
     gap: 1rem;
 }
 
-.flex{
+.flex {
     display: flex;
     gap: 1rem;
 }
@@ -204,6 +166,8 @@ ho mantenuto il nome delle classi per pigrizia, ovviamente in una produzione ser
     width: 100%;
 }
 
+/* NB: queste includono display:flex perché
+   in alcuni punti (es. footer-accordion) sono usate da sole */
 .justify-center {
     display: flex;
     justify-content: center;
@@ -229,32 +193,26 @@ ho mantenuto il nome delle classi per pigrizia, ovviamente in una produzione ser
     gap: 1rem;
 }
 
-.gap-1rem {
-    gap: 1rem;
-}
+.gap-1rem { gap: 1rem; }
+.gap-2rem { gap: 2rem; }
 
-.gap-2rem {
-    gap: 2rem;
-}
-
-/** Fine Utility Classes */
-
-/*! Header Styles */
+/* =========================
+   HEADER / HERO
+   ========================= */
 
 .jumbotron {
     background: url('../img/jumbo.png') no-repeat center center / cover;
 }
 
-
-.header-background { /* Colore di sfondo semi-trasparente */
-    padding: 10px 0; /* Spaziatura interna */
+.header-background {
+    padding: 10px 0;
 }
 
 .nav-container {
-        width: 62%;
-        margin: 0.8rem auto;
-        padding: 0;
-        font-size: 0.8rem;
+    width: 62%;
+    margin: 0.8rem auto;
+    padding: 0;
+    font-size: 0.8rem;
 }
 
 .logo {
@@ -292,26 +250,27 @@ ho mantenuto il nome delle classi per pigrizia, ovviamente in una produzione ser
     color: black;
 }
 
-/* Font style per header */
+/* Testi header */
 
-.catchy{
+.catchy {
     color: white;
     font-size: 4rem;
     font-weight: bold;
-    margin-bottom: 15px; 
+    margin-bottom: 15px;
     text-align: center;
 }
 
-p.subtitle{
+p.subtitle {
     color: white;
     font-size: 1.2rem;
-    margin-bottom: 25px; 
-    text-align: center;
+    margin-bottom: 25px;
     line-break: auto;
     text-align: justify;
 }
 
-/*! Onde Decorative */
+/* =========================
+   ONDE DECORATIVE
+   ========================= */
 
 .wave {
     width: 100%;
@@ -321,11 +280,13 @@ p.subtitle{
     padding: 2rem 0 0;
 }
 
-.wave-reverse{
+.wave-reverse {
     transform: rotate(180deg) scale(-1, 1);
 }
 
-/*! Main Styles */
+/* =========================
+   MAIN
+   ========================= */
 
 .slide-container {
     padding: 20px 0;
@@ -333,43 +294,44 @@ p.subtitle{
 }
 
 .slideshow {
-        width: 48%;
+    width: 48%;
 }
 
-.news-item {
-    padding: 20px 0; 
-}
+/* padding già definito sopra, qui era un doppione
+   lasciamo solo quello principale in alto */
 
+/* Contenuto testo nelle card */
 .news-content.col-22 {
-   padding: 0 3rem;
+    padding: 0 3rem;
 }
 
-/* Font styles for main content */
+/* Testi principali */
 
-h3.news-title{
+h3.news-title {
     font-size: 3rem;
     font-weight: bold;
-    margin-bottom: 10px; 
+    margin-bottom: 10px;
 }
 
-.stars{
+.stars {
     display: inline-block;
     background: url('../img/stars.svg') no-repeat center center;
     background-size: contain;
     padding: 0.75rem 3.5rem;
-    font-size: 2rem;    
+    font-size: 2rem;
 }
 
-
-/*! Accordion Styles */
+/* =========================
+   FOOTER / ACCORDION
+   ========================= */
 
 .footer-accordion {
     padding: 10px 0 20px 0;
     margin: 0 auto;
-    gap: 5rem
+    gap: 5rem;
 }
 
-.first-col{
+.first-col {
     flex: 2 1 0;
 }
 
@@ -377,13 +339,14 @@ h3.news-title{
     flex: 1 1 0;
 }
 
+/* Non usato al momento, ma lo lascio come componente generico */
 .accordion {
-  display: flex;
-  height: 300px;
-  margin: auto;
+    display: flex;
+    height: 300px;
+    margin: auto;
 }
 
-h4.language-selector{
+h4.language-selector {
     font-size: 2rem;
     font-weight: bold;
 }
@@ -395,6 +358,7 @@ h4.language-selector{
     color: white;
 }
 
+/* Selettore lingua – definito una sola volta */
 .language-selector {
     background-color: transparent;
     border: none;
@@ -417,22 +381,16 @@ h4.language-selector{
     border-radius: 4px;
 }
 
-.language-selector {
-    background-color: transparent;
-    border: none;
-    color: #ffffff;
-    font-size: 0.9rem;
-    cursor: pointer;
-}
-
 .language-selector option {
     background-color: rgb(34, 38, 41);
     color: #ffffff;
 }
 
-/*! Footer Styles */
+/* =========================
+   FOOTER FINALE
+   ========================= */
 
-.informational{
+.informational {
     padding: 1rem;
 }
 
