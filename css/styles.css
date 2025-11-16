@@ -362,6 +362,7 @@ h4.language-selector{
 /*Footer generale informazioni*/
 .informational{
     padding: 1rem;
+    margin:0 auto;
 }
 
 /*Allineamento footer logo e pulsante back-up*/
@@ -392,11 +393,61 @@ h4.language-selector{
 
 /* Media query per schermi piccoli */
 @media (max-width: 48rem) {
+    /* --- NAVBAR / HEADER --- */
+
+    /* Il contenitore del menu occupa tutta la larghezza */
+    .nav-container {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 1rem;
+        font-size: 0.75rem; /* leggermente più piccolo su mobile */
+    }
+
+    /* La barra di navigazione va in colonna */
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+
+    /* Logo centrato */
+    .logo {
+        align-self: center;
+    }
+
+    /* I link di navigazione diventano una lista verticale */
+    .nav-links {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        flex-grow: 0;      /* non forzare più l’allargamento */
+    }
+
+    /* Il bottone "Accedi" va centrato sotto il menu */
+    .login {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* La hero occupa tutta la larghezza su mobile */
+    .slide-container {
+        padding: 1.25rem 1rem;
+    }
+
+    .slideshow {
+        width: 100%;
+    }
+
+    /* --- CARD CENTRALI (già presenti) --- */
+
     .news-item{
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
+
     .news-content.col-40,
     .news-content.col-22{
         flex: 1 1 100%;
@@ -404,5 +455,12 @@ h4.language-selector{
 
     .news-content.col-22{
         padding: 0 1.5rem;
+    }
+
+    /* --- FOOTER --- */
+
+    .footer-accordion{
+        flex-direction: column;
+        align-items: center;
     }
 }
