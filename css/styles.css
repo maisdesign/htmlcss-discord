@@ -78,11 +78,12 @@ img{
 
 /* Jumbotron */
 .jumbotron{
-    background: url('../img/jumbo.png') no-repeat center center / cover;
+    
 }
 
 .header-background{
     padding: 0.625rem 0;
+    background-color: #255ee9;
 }
 
 .nav-container{
@@ -179,6 +180,8 @@ p, a, span, li, button{
 .slide-container{
     padding: 1.25rem 0;
     font-size: 0.8rem;
+    background: url('../img/jumbo.png') no-repeat center center / cover;
+    min-height: 500px;
 }
 
 .slideshow{
@@ -390,6 +393,17 @@ h4.language-selector{
 .social-images{
     max-width: 2rem;
 }
+
+/** Solo per giocare con rotate sulle immagini **/
+
+ .emphasize:hover{
+        opacity: 0.9;
+        transform: rotate(0.05turn) scale(1.1);
+        position: relative;
+        z-index: 2;
+    }
+
+/*! Responsive Design */
 
 /* Media query per schermi piccoli */
 @media (max-width: 48rem) {
