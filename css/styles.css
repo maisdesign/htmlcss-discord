@@ -97,7 +97,7 @@ img{
     text-shadow: 0.1rem 1rem 2rem rgba(0, 0, 0, 0.3);
 }
 
-/*Navbar and navigation utilities*/
+/* Navbar and navigation utilities */
 .navbar,
 .nav-links,
 .slide-container{
@@ -106,13 +106,13 @@ img{
     align-items: center;
 }
 
-/*Tutti gli elementi in nav hanno questa larghezza per distribuire lo spazio uniformemente*/
+/* Tutti gli elementi in nav hanno questa larghezza per distribuire lo spazio uniformemente */
 .logo{
     flex: 1;
     flex-grow: 2;
 }
 
-/*Padding bottom univoco per i vari elementi presenti*/
+/* Padding bottom univoco per i vari elementi presenti */
 .logo,
 .nav-links,
 .login{
@@ -161,7 +161,7 @@ img{
     gap: 1rem;
 }
 
-/*normalize typography for global use*/
+/* Tipography */
 h1, h2, h3, h4, h5, h6{
     font-family: 'Whitney', sans-serif;
     color: black;
@@ -232,7 +232,7 @@ p.subtitle{
     background-color: rgb(0, 0, 0);
 }
 
-/* Palette di colori alternative*/
+/* Palette di colori alternative */
 .ceruleo{
     background-color: rgb(143, 163, 227);
 }
@@ -247,7 +247,7 @@ p.subtitle{
 .news-item{
     display: flex;
     align-items: center;
-    gap: 3rem;
+    gap: 1rem;
     padding: 1.25rem 0;
 }
 
@@ -259,7 +259,7 @@ p.subtitle{
 
 /*colonne secondarie con testo*/
 .col-22{
-    flex: 0 1 35%;
+    flex: 0 1 22%;
 }
 
 /*contenitore generale main body 62%*/
@@ -477,4 +477,12 @@ h4.language-selector{
         flex-direction: column;
         align-items: center;
     }
+}
+
+
+/*! Cose aggiunte dopo la consegna per pareggio estetico e funzionale */
+h3.news-title{
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 0.625rem;
 }
